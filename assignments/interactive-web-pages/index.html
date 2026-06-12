@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Interactive Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Task Manager</h1>
+            <p class="subtitle">Build an interactive web app with JavaScript and REST APIs</p>
+        </header>
+
+        <main>
+            <!-- Add Task Form -->
+            <section class="add-task-section">
+                <h2>Add a New Task</h2>
+                <form id="taskForm" class="task-form">
+                    <input 
+                        type="text" 
+                        id="taskInput" 
+                        placeholder="Enter task title..." 
+                        required
+                    >
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                </form>
+                <div id="formMessage" class="message"></div>
+            </section>
+
+            <!-- Tasks List -->
+            <section class="tasks-section">
+                <h2>Your Tasks</h2>
+                <div id="loading" class="loading hidden">Loading tasks...</div>
+                <ul id="tasksList" class="tasks-list">
+                    <!-- Tasks will be inserted here by JavaScript -->
+                </ul>
+                <div id="emptyState" class="empty-state">
+                    No tasks yet. Add one above to get started!
+                </div>
+            </section>
+
+            <!-- API Connection Status -->
+            <section class="status-section">
+                <h3>API Status</h3>
+                <div id="apiStatus" class="api-status">
+                    <p>API URL: <code id="apiUrl">Not connected</code></p>
+                    <button id="connectButton" class="btn btn-secondary">Connect to Backend</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>💡 Tip: Open DevTools (F12) to see network requests and console logs.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

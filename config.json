@@ -72,6 +72,30 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "interactive-web-pages",
+      "title": "Building Interactive Web Pages with JavaScript",
+      "description": "Learn to build interactive user interfaces with HTML, CSS, and vanilla JavaScript. Create a task manager web app and connect it to your FastAPI backend for a complete full-stack experience.",
+      "path": "assignments/interactive-web-pages",
+      "dueDate": "2026-06-19",
+      "attachments": [
+        {
+          "name": "HTML Starter",
+          "file": "index.html",
+          "type": "html"
+        },
+        {
+          "name": "CSS Styles",
+          "file": "styles.css",
+          "type": "html"
+        },
+        {
+          "name": "JavaScript Code",
+          "file": "script.js",
+          "type": "javascript"
+        }
+      ]
     }
   ]
 }
